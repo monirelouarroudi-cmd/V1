@@ -1,8 +1,8 @@
 # 🚀 6 mois d'informatique : le grand récap + un projet final
 
-**Élève :** Louis
-**Durée :** 1h de rappel + pause + 45 min de projet
-**Principe :** beaucoup de schémas, un mini-quiz après chaque partie, et un vrai projet à la fin.
+**Élève :** Victor
+**Durée :** 1h de rappel + pause + 40 min de projet
+**Au programme :** des schémas, un mini-quiz après chaque partie, et un vrai projet à la fin.
 
 ---
 
@@ -10,19 +10,19 @@
 
 | Durée | Partie |
 |---|---|
-| 5 min | 0. Où en est-on ? La carte de nos 6 mois |
+| 5 min | 0. La carte de nos 6 mois |
 | 10 min | 1. L'intelligence artificielle |
 | 10 min | 2. Python |
-| 10 min | 3. HTML / CSS / JavaScript |
+| 10 min | 3. HTML / CSS |
 | 10 min | 4. Entraîner un modèle (no-code / low-code) |
 | 10 min | 5. Bases de données & SQL |
 | 5 min | 6. Quiz final de rappel |
 | 5 min | ☕ Pause |
-| 45 min | 🏆 **Projet : construire une mini-IA from scratch** |
+| 40 min | 🏆 **Projet : construire une mini-IA from scratch** |
 
 ---
 
-## 0. La carte de nos 6 mois (5 min)
+## 0. La carte de nos 6 mois
 
 ```mermaid
 timeline
@@ -30,7 +30,7 @@ timeline
     Mois 1 : Introduction à l'IA
     Mois 2 : Python (bases)
     Mois 3 : Python avancé
-    Mois 4 : HTML, CSS, JavaScript
+    Mois 4 : HTML et CSS
     Mois 5 : Entraînement de modèles (no-code / low-code)
     Mois 6 : Bases de données & SQL
 ```
@@ -43,21 +43,17 @@ mindmap
       Modèles
     Programmation
       Python
-      JavaScript
     Web
       HTML : la structure
       CSS : le style
-      JS : le comportement
     Données
       Tables
       SQL
 ```
 
-> 🗣️ **À demander à Louis :** "Parmi tout ça, qu'est-ce qui t'a le plus plu ? Qu'est-ce que tu as oublié ?" → ça te dit sur quoi insister.
-
 ---
 
-## 1. L'intelligence artificielle (10 min)
+## 1. L'intelligence artificielle
 
 ### L'idée clé
 
@@ -90,14 +86,14 @@ flowchart LR
 
 ---
 
-## 2. Python (10 min)
+## 2. Python
 
 ### Les briques de base
 
 ```python
 # Variables et types
-age = 15            # nombre entier
-nom = "Louis"       # texte
+age = 15              # nombre entier
+nom = "Victor"        # texte
 notes = [12, 15, 18]  # liste
 
 # Condition
@@ -126,21 +122,8 @@ flowchart TD
     E --> F[Modules : math, sqlite3, requests...]
 ```
 
-### 🔧 Défi express (3 min)
+### 🔧 Défi express
 Écrire une fonction `maximum(liste)` qui renvoie le plus grand nombre **sans utiliser** `max()`.
-
-<details>
-<summary>💡 Solution (pour toi)</summary>
-
-```python
-def maximum(liste):
-    plus_grand = liste[0]
-    for x in liste:
-        if x > plus_grand:
-            plus_grand = x
-    return plus_grand
-```
-</details>
 
 ### ✅ Mini-quiz
 1. Quelle est la différence entre une liste et une variable simple ?
@@ -148,48 +131,51 @@ def maximum(liste):
 
 ---
 
-## 3. HTML / CSS / JavaScript (10 min)
+## 3. HTML / CSS
 
-### Les 3 rôles (l'analogie de la maison 🏠)
+### Les 2 rôles (l'analogie de la maison 🏠)
 
 ```mermaid
 flowchart LR
-    H["HTML<br/>les murs et les pièces<br/>(structure)"] --> C["CSS<br/>la peinture et la déco<br/>(style)"] --> J["JavaScript<br/>l'électricité et les interrupteurs<br/>(comportement)"]
+    H["HTML<br/>les murs et les pièces<br/>(structure)"] --> C["CSS<br/>la peinture et la déco<br/>(style)"]
 ```
 
-### Exemple minimal qui regroupe les trois
+### Exemple minimal qui regroupe les deux
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
   <style>
-    button { background: royalblue; color: white; padding: 10px; border-radius: 8px; }
+    h1 { color: royalblue; text-align: center; }
+    p  { font-size: 20px; }
+    .carte {
+      background: lightyellow;
+      padding: 15px;
+      border-radius: 10px;
+      width: 300px;
+    }
   </style>
 </head>
 <body>
-  <h1 id="titre">Bonjour !</h1>
-  <button onclick="changer()">Clique-moi</button>
-
-  <script>
-    function changer() {
-      document.getElementById("titre").textContent = "Tu as cliqué ! 🎉";
-    }
-  </script>
+  <h1>Ma première page</h1>
+  <div class="carte">
+    <p>Je m'appelle Victor et j'apprends l'informatique.</p>
+  </div>
 </body>
 </html>
 ```
 
-### ✅ Mini-quiz
-1. Quelle technologie sert à changer la couleur d'un bouton ? Et à réagir à un clic ?
-2. C'est quoi une balise ? Cite-en trois.
+### 🔧 Défi express
+Modifier le code pour que le titre devienne rouge et que la carte ait un fond vert clair.
 
-### 🔧 Défi express (3 min)
-Modifier le code ci-dessus pour que le bouton change aussi la couleur du titre en rouge.
+### ✅ Mini-quiz
+1. Quelle technologie sert à changer la couleur d'un titre ? Et à créer le titre ?
+2. C'est quoi une balise ? Cites-en trois.
 
 ---
 
-## 4. Entraîner un modèle sans coder (10 min)
+## 4. Entraîner un modèle sans coder
 
 ### Le cycle de vie d'un modèle
 
@@ -216,7 +202,7 @@ flowchart LR
 
 ---
 
-## 5. Bases de données & SQL (10 min)
+## 5. Bases de données & SQL
 
 ### Le schéma à retenir
 
@@ -250,25 +236,23 @@ DELETE FROM notes WHERE id = 5;                    -- supprimer
 
 ---
 
-## 6. Quiz final de rappel (5 min)
-
-*(À l'oral, rapide, sans note.)*
+## 6. Quiz final de rappel
 
 1. Cite 3 types de choses qu'on peut construire avec Python.
-2. HTML, CSS, JS : un mot pour chacun.
+2. HTML et CSS : un mot pour chacun.
 3. Cite les 4 étapes pour entraîner un modèle d'IA.
 4. À quoi sert un `JOIN` en SQL ?
 5. Quelle partie du programme t'a le plus plu, et pourquoi ?
 
 ---
 
-## ☕ Pause (5 min)
+## ☕ Pause
 
 ---
 
-# 🏆 PROJET : construire une mini-IA *from scratch* (45 min)
+# 🏆 PROJET : construire une mini-IA *from scratch* (40 min)
 
-> **Pourquoi ce projet ?** Louis a déjà entraîné des modèles avec des interfaces "no-code". Aujourd'hui, il va **ouvrir la boîte** et comprendre ce qu'il se passe dedans, en n'utilisant que du Python et des maths qu'il connaît déjà (Pythagore !).
+Tu as déjà entraîné des modèles avec des interfaces "no-code". Aujourd'hui, on **ouvre la boîte** : tu vas coder une IA toi-même, uniquement avec du Python et des maths que tu connais déjà (Pythagore !).
 
 ## L'idée : l'algorithme des "plus proches voisins" (k-NN)
 
@@ -316,7 +300,7 @@ def distance(a, b):
 print(distance((150, 7.0), (200, 8.0)))
 ```
 
-🔧 **À faire :** Louis calcule d'abord à la main la distance entre `(150, 7.0)` et `(200, 8.0)`, puis vérifie avec Python.
+🔧 **À faire :** calculer d'abord à la main la distance entre `(150, 7.0)` et `(200, 8.0)`, puis vérifier avec Python.
 
 ## Étape 3 : la prédiction (15 min)
 
@@ -337,7 +321,7 @@ print(predire((195, 8.0), donnees))   # → orange
 print(predire((145, 7.1), donnees))   # → pomme
 ```
 
-🔧 **À faire :** Louis invente 3 fruits "mystères", fait deviner l'ordinateur, et vérifie si la réponse paraît logique.
+🔧 **À faire :** inventer 3 fruits "mystères", laisser l'ordinateur deviner, et vérifier si la réponse paraît logique.
 
 ## Étape 4 : améliorer avec k voisins (10 min)
 
@@ -362,45 +346,10 @@ def predire_k(nouveau, donnees, k=3):
 print(predire_k((195, 8.0), donnees, k=3))
 ```
 
-✅ **Question :** Pourquoi voter à plusieurs est-il plus fiable qu'un seul voisin ? (À relier à la notion de sur-apprentissage vue plus tôt.)
+✅ **Question :** pourquoi voter à plusieurs est-il plus fiable qu'un seul voisin ?
 
-## Étape 5 : bonus, tester sa mini-IA (5 min)
+## 🎓 Ce qu'il faut retenir
 
-Séparer les données en deux : **entraînement** et **test**, comme avec les modèles no-code.
-
-```python
-entrainement = donnees[:4]   # à adapter pour garder des pommes ET des oranges
-test = donnees[4:]
-
-bonnes = 0
-for poids, taille, vraie_etiquette in test:
-    if predire_k((poids, taille), entrainement, k=1) == vraie_etiquette:
-        bonnes += 1
-
-print(f"Réussite : {bonnes}/{len(test)}")
-```
-
-## 🎓 Ce que Louis doit retenir
-
-- Une IA, ce n'est pas de la magie : ici c'est **des distances + une comparaison**.
-- Ce qu'il a utilisé dans ce projet : **Python** (fonctions, boucles, listes), **maths** (Pythagore), **concepts d'IA** (données, étiquettes, entraînement, test).
-- Les "vrais" modèles font la même chose en beaucoup plus gros (millions d'exemples, centaines de dimensions au lieu de 2).
-
----
-
-## 🔭 Si tu as encore du temps / idées pour la suite
-
-| Idée | Lien avec ce qu'il connaît | Difficulté |
-|---|---|---|
-| Afficher les fruits sur un **graphique** (`matplotlib`) | Python + maths | ⭐⭐ |
-| Stocker les fruits dans une **base SQLite** et lire les données depuis la BDD | SQL + Python | ⭐⭐ |
-| Faire une **page web** où on tape poids/taille et la prédiction s'affiche (JavaScript) | HTML/CSS/JS + IA | ⭐⭐⭐ |
-| Passer à 3 caractéristiques (ex : couleur codée en nombre) | Maths (distance en 3D) | ⭐⭐ |
-
----
-
-## 📝 Notes pour l'enseignant
-
-- **Rythme :** Louis comprend très vite. Si le rappel (parties 1 à 5) passe plus vite que prévu, enchaîner directement sur le projet pour garder plus de temps pour les étapes 4 et 5, qui sont les plus riches.
-- **Le rappel sert de diagnostic :** note les parties où Louis hésite lors des mini-quiz, et reviens dessus dans la partie centrale de la séance.
-- **Adapter le langage** selon son âge : tous les schémas et analogies (maison, annuaire, etc.) fonctionnent aussi bien avec un élève jeune qu'avec un lycéen.
+- Une IA, ce n'est pas de la magie : ici, c'est **des distances + une comparaison**.
+- Dans ce projet, on a utilisé **Python** (fonctions, boucles, listes), des **maths** (Pythagore) et des **concepts d'IA** (données, étiquettes, entraînement, prédiction).
+- Les "vrais" modèles font la même chose en beaucoup plus gros : des millions d'exemples et des centaines de dimensions au lieu de 2.
